@@ -1,0 +1,65 @@
+.event-texts {
+  margin-top: 90px;
+}
+.event-texts p {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: #535862;
+}
+.even_ul {
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+}
+.even_li {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: #535862;
+  list-style: disc;
+  margin-left: 60px;
+}
+.even_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.ariza-btn {
+  width: auto;
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+  padding: 6px 6px 6px 32px;
+  font-weight: 600;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  border-radius: 24px;
+  margin-top: 40px;
+  background-color: #f28e46;
+  box-shadow: 0px 6px 8px 0px #94370533;
+}
+.even_img img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .event-texts {
+    margin-top: 26px;
+  }
+  .event-texts p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .even_li {
+    font-size: 12px;
+    margin-left: 15px;
+    line-height: 18px;
+  }
+  .even_img img {
+    margin-top: 48px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,211 @@
+.tadbirlar_text {
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+}
+.tadbirlar_text2 {
+  display: flex;
+  gap: 24px;
+  margin-top: 80px;
+}
+.tadbirlar_text2 h1 {
+  font-weight: 600;
+  font-size: 40px;
+  color: black;
+}
+.tadbirlar_text2 hr {
+  width: 2px;
+  background-color: #f28e46;
+  border: none;
+}
+.tadbirlar_text h1 {
+  font-weight: 600;
+  font-size: 40px;
+  color: black;
+}
+.tadbirlar_text hr {
+  width: 2px;
+  background-color: #f28e46;
+  border: none;
+}
+.tadbirlar_card {
+  width: 100%;
+  max-width: 415px;
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-top: 40px;
+  box-shadow: 0px 3px 6px 0px #51709a1a;
+}
+
+.tadbirlar_card2 {
+  width: 100%;
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-top: 40px;
+  box-shadow: 0px 3px 6px 0px #51709a1a;
+}
+.tadbirlar_img {
+  position: relative;
+  width: 100%;
+  height: 230px;
+}
+
+.tadbirlar_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.yaqinda_btn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #f28e46;
+  font-weight: 600;
+  border-radius: 16px;
+  text-decoration: none;
+}
+.tadbirlar_content {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tadbirlar_title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #020202;
+}
+.tadbirlar_date {
+  font-size: 24px;
+  font-weight: 500;
+  color: #020202;
+}
+.tadbirlar_date2 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #535862;
+}
+.tadbirlar_hr {
+  width: 100%;
+  height: 2px;
+  background-color: #ebebeb;
+  border: none;
+  margin-top: 12px;
+}
+.batafsil_btn {
+  margin-top: 16px;
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: end;
+  padding: 6px 6px 6px 24px;
+  background: linear-gradient(to right, #f9b513, #ea601e);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 18px;
+}
+.batafsil_btn img {
+  width: 100%;
+  max-width: 38px;
+}
+.cards_slider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.carousel-btn {
+  display: none;
+}
+.card2_titles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+.card2_titles h4 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #020202;
+}
+.card2_titles p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #535862;
+}
+.main-startup {
+  margin-bottom: 80px;
+}
+@media (max-width: 500px) {
+  .tadbirlar_text hr {
+    margin: 0px;
+    height: auto;
+    width: 2px;
+  }
+  .tadbirlar_text2 hr {
+    margin: 0px;
+    height: auto;
+    width: 2px;
+  }
+  .tadbirlar_text2 h1 {
+    font-size: 30px;
+  }
+  .tadbirlar_text h1 {
+    font-size: 30px;
+  }
+  .cards_tadbirlar {
+    position: relative;
+  }
+  .cards_slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .tadbirlar_card {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    max-width: 100%;
+  }
+  .tadbirlar_card2 h1 {
+    font-size: 60px;
+  }
+  .tadbirlar_card2 img {
+    width: 100%;
+  }
+  .tadbirlar_card2 {
+    /* to‘liq konteynerni egallasin */
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    max-width: 100%;
+  }
+  .carousel-btn {
+    display: block;
+    bottom: 12px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f28e46;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .carusel {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+  }
+}

@@ -13,15 +13,28 @@
         <a href="/">
           <img src="./img/site_logo.svg" alt="header logo" />
         </a>
-        <ul>
-          <li><a href="/">Asosiy</a></li>
-          <li><a href="/">Biz haqimizda</a></li>
-          <li><a href="/">Tadbirlar</a></li>
-          <li><a href="/">Startuplar(Portfel)</a></li>
-          <li><a href="/">Hamkorlar</a></li>
-          <li><a href="/">Youtube blog</a></li>
-          <li><a href="/">Kontaktlar</a></li>
+        <ul class="nav-menu">
+          <div class="menu-header">
+            <div class="phone_logo">
+              <div class="logo">
+                <img src="./img/site_logo.svg" alt="Logo" />
+              </div>
+              <button class="close-btn">
+                <img src="./img/yopish.svg" alt="Yopish" />
+              </button>
+            </div>
+          </div>
+          <div class="nav_navbar">
+            <li><a href="/" class="active">Asosiy</a></li>
+            <li><a href="/">Biz haqimizda</a></li>
+            <li><a href="./pages/event.html">Tadbirlar</a></li>
+            <li><a href="/">Startuplar(Portfel)</a></li>
+            <li><a href="/">Hamkorlar</a></li>
+            <li><a href="/">Youtube blog</a></li>
+            <li><a href="/">Kontaktlar</a></li>
+          </div>
         </ul>
+
         <select name="" id="">
           <option value="uz">O'zb</option>
           <option value="ru">Ru</option>
@@ -77,32 +90,33 @@
       </div>
       <!-- ////////////////////// -->
       <div class="feedbek container">
-        <div class="feedbek_cards">
-          <div class="feedbek_card">
-            <img src="./img/feedbek1.svg" alt="" />
-            <p>Xali tayyor emasman</p>
+        <div class="feedbek_bag">
+          <div class="feedbek_cards">
+            <div class="feedbek_card">
+              <img src="./img/feedbek1.svg" alt="" />
+              <p>Xali tayyor emasman</p>
+            </div>
+            <div class="feedbek_card">
+              <img src="./img/feedbek2.svg" alt="" />
+              <p>Yolg'izman</p>
+            </div>
+            <div class="feedbek_card">
+              <img src="./img/feedbek3.svg" alt="" />
+              <p>Pul yo'q</p>
+            </div>
           </div>
-          <div class="feedbek_card">
-            <img src="./img/feedbek2.svg" alt="" />
-            <p>Yolg'izman</p>
+          <div class="feedbek_titles">
+            <hr />
+            <h1>
+              Bu gaplar sizniki bo‘lishi mumkin.Lekin biz uchun bu muhim
+              emas.Biz tayyor reja emas, rost fikrni kutamiz.
+            </h1>
           </div>
-          <div class="feedbek_card">
-            <img src="./img/feedbek3.svg" alt="" />
-            <p>Pul yo'q</p>
-          </div>
-        </div>
-        <div class="feedbek_titles">
-          <hr />
-          <h1>
-            Bu gaplar sizniki bo‘lishi mumkin. Lekin biz uchun bu muhim
-            emas. Biz tayyor reja emas, rost fikrni kutamiz.
-          </h1>
-        </div>
-        <div>
           <a class="fedbek-btn" href="/"
             >Ariza yuborish <img src="./img/feedbek_btn.svg" alt=""
           /></a>
         </div>
+        <div></div>
       </div>
       <!-- ////////////////////// -->
       <div class="main_texts container">
@@ -114,12 +128,12 @@
         <div class="partnior-cards">
           <div class="partnior_card">
             <img src="./img/gerb_agentligi.svg" alt="" />
-            <a href="">Ko'priq o'qish</a>
+            <a href="">Ko'proq o'qish</a>
           </div>
 
           <div class="partnior_card">
             <img src="./img/jamgarma.svg" alt="" />
-            <a href="">Ko'priq o'qish</a>
+            <a href="">Ko'proq o'qish</a>
           </div>
         </div>
       </div>
@@ -304,8 +318,8 @@
         </div>
         <p>Har bir katta g‘oya — kichik ishonchdan boshlanadi</p>
         <iframe
-          width=""
-          height="415"
+          width="auto"
+          height="auto"
           class="youtube"
           src="https://www.youtube.com/embed/8ZGJj6FzKdU?si=nW3XsGKY66cyroAG"
           title="YouTube video player"
@@ -527,5 +541,17 @@
         </div>
       </div>
     </footer>
+    <script>
+      const btnOpen = document.querySelector(".hamburger-btn");
+      const btnClose = document.querySelector(".close-btn");
+      const menu = document.querySelector(".nav-menu");
+
+      btnOpen.addEventListener("click", () => {
+        menu.classList.add("open");
+      });
+      btnClose.addEventListener("click", () => {
+        menu.classList.remove("open");
+      });
+    </script>
   </body>
 </html>
