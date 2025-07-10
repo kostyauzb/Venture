@@ -150,7 +150,7 @@
               /></a>
             </div>
           </div>
-          <div class="carusel"> 
+          <div class="carusel">
             <button class="carousel-btn prev">←</button>
             <button class="carousel-btn next">→</button>
           </div>
@@ -219,10 +219,10 @@
             </div>
           </div>
         </div>
-        <div class="carusel"> 
-            <button class="carousel-btn prev">←</button>
-            <button class="carousel-btn next">→</button>
-          </div>
+        <div class="carusel">
+          <button class="carousel-btn prev">←</button>
+          <button class="carousel-btn next">→</button>
+        </div>
       </div>
     </main>
     <!------------------------------- footer -->
@@ -294,27 +294,29 @@
         </div>
       </div>
     </footer>
-   <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const sliders = document.querySelectorAll(".cards_tadbirlar");
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sliders = document.querySelectorAll(".cards_tadbirlar");
 
-    sliders.forEach((cardsWrapper) => {
-      const slider = cardsWrapper.querySelector(".cards_slider");
-      const nextBtn = cardsWrapper.parentElement.querySelector(".carousel-btn.next");
-      const prevBtn = cardsWrapper.parentElement.querySelector(".carousel-btn.prev");
+        sliders.forEach((cardsWrapper) => {
+          const slider = cardsWrapper.querySelector(".cards_slider");
+          const nextBtn =
+            cardsWrapper.parentElement.querySelector(".carousel-btn.next");
+          const prevBtn =
+            cardsWrapper.parentElement.querySelector(".carousel-btn.prev");
 
-      if (!slider || !nextBtn || !prevBtn) return;
+          if (!slider || !nextBtn || !prevBtn) return;
 
-      nextBtn.addEventListener("click", () => {
-        slider.scrollBy({ left: slider.clientWidth, behavior: "smooth" });
+          nextBtn.addEventListener("click", () => {
+            slider.scrollBy({ left: slider.clientWidth, behavior: "smooth" });
+          });
+
+          prevBtn.addEventListener("click", () => {
+            slider.scrollBy({ left: -slider.clientWidth, behavior: "smooth" });
+          });
+        });
       });
-
-      prevBtn.addEventListener("click", () => {
-        slider.scrollBy({ left: -slider.clientWidth, behavior: "smooth" });
-      });
-    });
-  });
-</script>
+    </script>
 
     <script>
       const btnOpen = document.querySelector(".hamburger-btn");
