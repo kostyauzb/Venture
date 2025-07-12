@@ -548,9 +548,12 @@
 
       btnOpen.addEventListener("click", () => {
         menu.classList.add("open");
+        document.body.classList.add("menu-open");
       });
+
       btnClose.addEventListener("click", () => {
         menu.classList.remove("open");
+        document.body.classList.remove("menu-open");
       });
     </script>
   </body>
