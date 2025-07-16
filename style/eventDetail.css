@@ -37,7 +37,7 @@
   align-items: center;
   border-radius: 24px;
   margin-top: 40px;
-  background-color: #f28e46;
+  background: linear-gradient(to right, #f9b513, #ea601e);
   box-shadow: 0px 6px 8px 0px #94370533;
 }
 .even_img img {
@@ -61,6 +61,8 @@
   .even_img img {
     margin-top: 48px;
     width: 100%;
-   
+    height: 198px;
+    object-fit: cover;
+    border-radius: 24px;
   }
 }
